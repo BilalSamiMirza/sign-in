@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="signup-section" class="container">
+        <form>
+            <h1>Sign Up</h1>
+            <div id="mesg"></div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button onclick="signUp(event)" type="button">Sign Up</button>
+        </form>
+        <div class="footer">
+            <p>Already have an account? <a href="#" onclick="showTodo()">Go to TODO</a></p>
+        </div>
+    </div>
+
+    <div id="todo-section" style="display:none;">
+        <h1>Todo App</h1>
+        <input id="inp" type="text">
+        <button onclick="createElem()">Enter</button>
+        <button id="" onclick="delAll()">Delete all</button>
+        <div id="main"> </div>
+        <ul id="showList"></ul>
+    </div>
+
+    <script src="app.js" type="module"></script>
+    <script src="todo.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
